@@ -28,11 +28,12 @@ class User extends Authenticatable
     ];
 
     /**
-     * Payments relationship
-
+     * Payment relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function payments()
     {
         return $this->belongsToMany('Payment');
     }
-     */
 }

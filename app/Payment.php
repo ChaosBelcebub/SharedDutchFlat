@@ -26,11 +26,13 @@ class Payment extends Model
         'remember_token',
     ];
 
-    /*
-     * Users relationship
-
+    /**
+     * User relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function user()
     {
         return $this->hasOne('User');
-    } */
+    }
 }
